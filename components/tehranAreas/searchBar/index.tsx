@@ -15,7 +15,13 @@ const SearchBar: FC<SearchBarProps> = ({ area, setArea }) => {
   const [isFocuse, setIsFocuse] = useState(false);
 
   return (
-    <Box width={400} bgcolor="#fff" zIndex="10" position="fixed">
+    <Box
+      py={2}
+      width={400}
+      bgcolor="background.default"
+      zIndex="10"
+      position="fixed"
+    >
       <TextField
         fullWidth
         color="secondary"

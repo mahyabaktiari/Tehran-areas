@@ -1,0 +1,21 @@
+/* we are preloading the `woff2` versions in `index.html` to improve user experience and web vital metrics.
+ in case of any update, make sure you update there too */
+
+@font-face {
+  font-family: "Ravi";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://hs3-cf.behtarino.com/static/fonts/Ravi-v2/Ravi-Regular.woff2) format("woff2"),
+    url(https://hs3-cf.behtarino.com/static/fonts/Ravi-v2/Ravi-Regular.woff) format("woff"),
+    url(https://hs3-cf.behtarino.com/static/fonts/Ravi-v2/Ravi-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Ravi";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url(https://hs3-cf.behtarino.com/static/fonts/Ravi-v2/Ravi-SemiBold.woff2) format("woff2"),
+    url(https://hs3-cf.behtarino.com/static/fonts/Ravi-v2/Ravi-SemiBold.woff) format("woff"),
+    url(https://hs3-cf.behtarino.com/static/fonts/Ravi-v2/Ravi-SemiBold.ttf) format("truetype");
+}

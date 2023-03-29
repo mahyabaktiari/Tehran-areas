@@ -2,7 +2,6 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Radio from "@mui/material/Radio";
 import type { FC } from "react";
-
 interface TehranAreasListProps {
   area: string;
   selectedArea: string;
@@ -24,7 +23,7 @@ const TehranAreasList: FC<TehranAreasListProps> = ({
       borderBottom="1px solid #bebebe5e"
       alignItems="center"
     >
-      <Typography color="steelblue">{area}</Typography>
+      <Typography color="text.primary">{area}</Typography>
       <Radio
         value={area}
         checked={selectedArea === area}
