@@ -9,11 +9,11 @@ const TehranAreas: FC = () => {
   const [selectedArea, setSelectedArea] = useState<string>("");
   const [area, setArea] = useState<string>("");
   const [areaList, setAreaList] = useState<string[]>([]);
-  const [isLoading, setIsloading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     //debounce function
-    setIsloading(true);
+    setIsLoading(true);
     const getAreas = setTimeout(() => {
       const params = area ? `?area=${area}` : "";
       axios
@@ -21,10 +21,10 @@ const TehranAreas: FC = () => {
         .then((res) => {
           const { data } = res.data;
           setAreaList(data);
-          setIsloading(false);
+          setIsLoading(false);
         })
         .catch(() => {
-          setIsloading(false);
+          setIsLoading(false);
         });
     }, 500);
     return () => clearTimeout(getAreas);

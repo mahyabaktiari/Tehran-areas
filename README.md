@@ -8,7 +8,7 @@ Tehran areas is a web application that developed by `NextJs` and `TypeScript`.
 ```bash
 git clone https://github.com/mahyabaktiari/Tehran-areas.git
 
-cd tehran-areas
+cd Tehran-areas
 
 yarn install
 
