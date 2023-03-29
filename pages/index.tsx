@@ -1,3 +1,4 @@
+import TehranAreas from "@/components/tehranAreas";
 import Head from "next/head";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
         <title>Tehran Areas</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <TehranAreas />
     </>
   );
 }
